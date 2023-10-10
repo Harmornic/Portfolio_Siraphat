@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckJar</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <p class="header">Siraphat</p>
+      <div class="menu-button" onclick="toggleMenu()">☰</div>
+
+      <ul class="menu">
+        <img class="close-menu" src="./img/cross.png" onclick="toggleMenu()" />
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#certificate" onclick="toggleMenu()">Certificate</a></li>
+        <li><a href="#game-design" onclick="toggleMenu()">Game Design</a></li>
+        <li><a href="#modeling" onclick="toggleMenu()">3D Modeling</a></li>
+        <li><a href="#roblox" onclick="toggleMenu()">Roblox Game</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero" id="home">
+        <img src="./img/profile.jpg" class="profile" />
+        <div class="qoute">
+          สวัสดีครับ ผม<br />นายสิรภัทร ลีล้าน<br />
+          ผมเชื่อว่าการที่เราทำอะไรผิดบ่อยๆนั้นมันถือเป็นบทเรียนให้เราได้พัฒนาต่อไป
+          เหมือนกับการ Coding แล้วเกิดError 1 ครั้ง ครั้งต่อไปก็จะไม่เกิดขึ้น
+        </div>
+      </section>
+      <section class="showcase">
+        <div class="block">
+          <div id="certificate">
+            <p class="block-header">Science day</p>
+            <img src="./img/certificate_science_day.jpg" />
+          </div>
+
+          <div>
+            <p class="block-header">Color sorting Robot</p>
+            <img src="./img/color_sorting_robot.jpg" />
+          </div>
+
+          <div>
+            <p class="block-header">Robot</p>
+            <img src="./img/robot.jpg" />
+          </div>
+        </div>
+        <div class="block" id="game-design">
+          <p class="block-header">Game Design with Roll20</p>
+          <img src="./img/game/1.jpg" />
+          <p class="block-info">
+            ขั้นตอนที่ 1<br />การออกแบบเนื้อเรื่องหรือการเขียนสตอรี่บอร์ด
+            (Storyboard) และออกแบบแผนที่ (Map design)
+            ให้เข้ากับสถานการณ์ตามที่เราออกแบบตามเนื้อเรื่องที่วางไว้
+          </p>
+          <img src="./img/game/2.jpg" />
+          <p class="block-info">
+            ขั้นตอนที่ 2<br />เริ่มออกแบบทักษะตัวละครแต่ละบุคคลตามแบบฟอร์มที่ให้แต่ละคนกรอกเช่น
+            อาชีพ ความชอบ ความกลัว ให้ออกมาสัมพันธ์กัน
+          </p>
+          <img src="./img/game/3.jpg" />
+          <p class="block-info">
+            ขั้นตอนที่ 3<br />สุดท้ายการออกแบบทักษะและเนื้อเรื่องของ
+            ตัวละครอื่นที่ไม่ใช่ผู้เล่นเช่น npc (non player character)
+            ให้ตรงตามยุคสมัยที่เราได้วางเนื้อเรื่องไว้
+          </p>
+        </div>
+        <div class="block" id="modeling">
+          <p class="block-header">3D Modeling</p>
+          <img src="./img/model/1.jpg" />
+          <p class="block-info">
+            ขั้นตอนที่ 1<br />ปั้นโมเดล Model ให้ดูเหมือนผลไม้ให้มีความตื้นลึก
+          </p>
+          <img src="./img/model/2.jpg" />
+          <p class="block-info">
+            ขั้นตอนที่ 2<br />
+            ปรับสีและค่าสะท้อนแสงของฉากหลังและการจัดแสงเงาให้เข้าฉากหลัง
+          </p>
+          <img src="./img/model/3.jpg" />
+          <p class="block-info">ขั้นตอนที่ 3<br />สุดท้ายเป็นการ Render</p>
+        </div>
+        <div class="block" id="roblox">
+          <p class="block-header">
+            Roblox Studio<br />Game design & development
+          </p>
+          <img src="./img/roblox/1.jpg" />
+          <p class="block-info">
+            ขั้นตอนที่ 1<br />เริ่มออกแบบแผนที่ตอนเริ่มด้วยการนำPartมาต่อกันแต่ละชิ้นเป็นอาคารตึก
+          </p>
+          <img src="./img/roblox/2.jpg" />
+          <img src="./img/roblox/3.jpg" style="margin-top: 2.8rem;"/>
+          <p class="block-info">
+            ขั้นตอนที่ 2<br />เมื่อได้ตัวอาคารมา
+            ก็เริ่มจัดแสงไฟให้มีความสว่างเพิ่มขึ้นแต่ให้อยู่ธีมวันฮาโลวีน
+          </p>
+          <img src="./img/roblox/4.jpg" />
+          <p class="block-info">
+            ขั้นตอนที่ 3<br />ขั้นตอนสุดท้ายนี้คือการจัดลูกเล่นในแต่ละห้องให้มีที่หลบซ่อนตามมุมต่างๆ
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
